@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echo "El valor de mi_variable es ${{ vars.DUMMY }}"
+      - run: echo "El valor de mi_variable es ${{ vars.DUMMY }} ${{ env.DUMMY }} "
