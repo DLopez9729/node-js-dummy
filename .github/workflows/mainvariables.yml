@@ -7,6 +7,8 @@ env:
 jobs:
   Lint:
     runs-on: ubuntu-latest
+    env:
+      DUMMY: Santafe Campeon 2024
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
