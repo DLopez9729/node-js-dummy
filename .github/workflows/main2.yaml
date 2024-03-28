@@ -12,7 +12,6 @@ on:
         type: choice
         options:
         - info
-        - warning
       tags:
         description: 'Test scenario tags'
         required: false
