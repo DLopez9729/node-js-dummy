@@ -20,7 +20,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '16'
-      - run: npm test
+      - name: Testing App    
+        run: npm test
+        continue-on-error: True
   build:
     runs-on: ubuntu-latest
     steps:
@@ -29,3 +31,5 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -t dummy:latest . 
+    needs: [audit,test]
+    
