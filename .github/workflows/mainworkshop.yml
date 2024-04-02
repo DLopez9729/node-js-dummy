@@ -28,4 +28,4 @@ jobs:
         uses: actions/checkout@v4
       - name: Build Docker Image
         run: |
-          docker build -t “Dummy.Build“ . 
+          docker build -t “dummy“ . 
